@@ -3,7 +3,10 @@
   "description": "yes chroma is my most favorite sound voltex",
   "version": "0.0.1",
   "main": "index.js",
-  "author": "FMS-Cat",
+  "author": {
+    "name": "FMS-Cat",
+    "url": "https://github.com/FMS-Cat"
+  },
   "license": "MIT",
   "private": false,
   "scripts": {
@@ -21,9 +24,10 @@
   "devDependencies": {
     "@fms-cat/glcat-ts": "^0.2.1",
     "@types/gl": "^4.1.0",
+    "@types/request": "^2.48.1",
     "@types/webpack": "^4.4.27",
-    "chroma-js": "^2.0.3",
     "gl": "^4.2.2",
+    "request": "^2.88.0",
     "ts-loader": "^5.4.4",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5",

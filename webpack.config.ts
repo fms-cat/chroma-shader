@@ -10,11 +10,11 @@ export default ( env: any, argv: any ): webpack.Configuration => {
   console.info( `Webpack: Building ${packageJson.name} ${VERSION} under ${argv.mode} mode...` );
 
   const banner = PROD
-    ? `${packageJson.name} v${VERSION} - (c) ${packageJson.author}, MIT License`
+    ? `${packageJson.name} v${VERSION} - (c) ${packageJson.author.name}, MIT License`
     : `${packageJson.name} v${VERSION}
 ${packageJson.description}
 
-Copyright (c) 2019 ${packageJson.author}
+Copyright (c) 2019 ${packageJson.author.name}
 chroma-shader is distributed under the MIT License
 https://opensource.org/licenses/MIT
 
