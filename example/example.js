@@ -9,7 +9,7 @@ const chromaShader = new ChromaShader( gl );
 let onUpdate = () => {};
 
 const frag = fs.readFileSync(
-  path.resolve( __dirname, './uv.frag' ),
+  path.resolve( __dirname, './plasma.frag' ),
   { encoding: 'utf-8' }
 );
 
@@ -28,12 +28,8 @@ chromaShader.initSDK( {
     onUpdate = () => chromaShader.render();
   } else {
     console.error( err );
+    process.exit( 1 );
   }
-
-  setTimeout( () => {
-    onUpdate = null;
-    chromaShader.uninitSDK();
-  }, 3000 );
 } );
 
 const update = () => {
@@ -42,3 +38,11 @@ const update = () => {
   setTimeout( update, 50 );
 };
 update();
+
+process.on( 'exit', async () => {
+  if ( chromaShader.getSDKURI() !== null ) {
+    await chromaShader.uninitSDK();
+    onUpdate = null;
+  }
+} );
+process.on( 'SIGINT', () => process.exit( 0 ) );
