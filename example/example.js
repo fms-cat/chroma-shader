@@ -1,3 +1,7 @@
+const GLContext = require( 'gl' );
 const { ChromaShader } = require( '../dist/index.js' );
 
-console.log( ChromaShader );
+const gl = GLContext( 256, 256 );
+const chromaShader = new ChromaShader( gl );
+
+console.log( chromaShader );

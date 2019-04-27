@@ -21,6 +21,7 @@ https://opensource.org/licenses/MIT
 Repository: https://github.com/FMS-Cat/automaton`;
 
   return {
+    target: 'node',
     entry: path.resolve(
       __dirname,
       'src/index.ts'
@@ -33,7 +34,7 @@ Repository: https://github.com/FMS-Cat/automaton`;
       globalObject: 'this'
     },
     resolve: {
-      extensions: [ '.js', '.json', '.ts' ]
+      extensions: [ '.js', '.json', '.ts' ],
     },
     module: {
       rules: [

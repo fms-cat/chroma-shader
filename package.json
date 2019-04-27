@@ -19,9 +19,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@fms-cat/glcat-ts": "^0.2.0",
+    "@fms-cat/glcat-ts": "^0.2.1",
+    "@types/gl": "^4.1.0",
     "@types/webpack": "^4.4.27",
     "chroma-js": "^2.0.3",
+    "gl": "^4.2.2",
     "ts-loader": "^5.4.4",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5",
