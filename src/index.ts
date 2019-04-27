@@ -60,7 +60,7 @@ export class ChromaShader {
   }
 
   /**
-   * Render.
+   * Render a frame. You might be put this function into your `update()` !
    */
   public render(): void {
     const program = this.__program;
