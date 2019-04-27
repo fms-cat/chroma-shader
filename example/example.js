@@ -9,7 +9,7 @@ const chromaShader = new ChromaShader( gl );
 let onUpdate = () => {};
 
 const frag = fs.readFileSync(
-  path.resolve( __dirname, './sine.frag' ),
+  path.resolve( __dirname, './uv.frag' ),
   { encoding: 'utf-8' }
 );
 
