@@ -38,6 +38,7 @@ Repository: https://github.com/FMS-Cat/automaton`;
     },
     module: {
       rules: [
+        { test: /\.(glsl|frag|vert)$/, use: [ 'raw-loader' ] },
         {
           test: /\.ts$/,
           exclude: /node_modules/,
