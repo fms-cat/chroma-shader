@@ -1,6 +1,6 @@
 # chroma-shader
 
-TODO: insert gif here
+![Imgur](https://i.imgur.com/6IKbBsa.gif)
 
 Light up your Razer keyboard using your shader
 
