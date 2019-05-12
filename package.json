@@ -1,14 +1,21 @@
 {
-  "name": "chroma-shader",
+  "name": "@fms-cat/chroma-shader",
   "description": "yes chroma is my most favorite sound voltex",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/index.min.js",
   "author": {
     "name": "FMS-Cat",
     "url": "https://github.com/FMS-Cat"
   },
   "license": "MIT",
   "private": false,
+  "files": [
+    "dist",
+    "types",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
   "scripts": {
     "version": "yarn all",
     "all": "yarn clean && yarn build",
