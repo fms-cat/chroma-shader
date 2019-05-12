@@ -10,6 +10,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "version": "yarn all",
+    "all": "yarn clean && yarn build",
+    "clean": "rimraf dist types",
     "build": "yarn build-dev && yarn build-prod && yarn build-types",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
@@ -29,6 +32,7 @@
     "gl": "^4.2.2",
     "raw-loader": "^2.0.0",
     "request": "^2.88.0",
+    "rimraf": "^2.6.3",
     "ts-loader": "^5.4.4",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.5",
