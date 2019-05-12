@@ -6,6 +6,7 @@ const { ChromaShader } = require( '../dist/index.js' );
 // == various init =================================================================================
 const gl = GLContext( ChromaShader.WIDTH, ChromaShader.HEIGHT );
 const chromaShader = new ChromaShader( gl );
+chromaShader.modtime = 300.0;
 
 let onUpdate = () => {};
 

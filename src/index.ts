@@ -8,8 +8,10 @@ void main() {
 `;
 
 export class ChromaShader {
-  public static WIDTH = 22;
-  public static HEIGHT = 6;
+  public static readonly WIDTH = 22;
+  public static readonly HEIGHT = 6;
+
+  public modtime = 300.0;
 
   private __gl: WebGLRenderingContext;
   private __glCat: GLCat;
@@ -77,7 +79,7 @@ export class ChromaShader {
 
     const now = Date.now();
     program.attribute( 'p', this.__vboQuad, 2 );
-    program.uniform1f( 'time', 0.001 * ( now - this.__beginTime ) );
+    program.uniform1f( 'time', 0.001 * ( now - this.__beginTime ) % this.modtime );
     program.uniform2f( 'resolution', ChromaShader.WIDTH, ChromaShader.HEIGHT );
     this.__gl.drawArrays( this.__gl.TRIANGLE_STRIP, 0, 4 );
     this.__gl.readPixels(
