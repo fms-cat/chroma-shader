@@ -11,7 +11,7 @@ uniform vec2 resolution;
 
 float plasmaField( vec2 p, float t ) {
   // https://www.bidouille.org/prog/plasma
-  float field = sin( 4.0 * p.x - t );
+  float field = sin( 4.0 * p.y - t );
   field += 1.4 * sin( 2.0 * ( p.x * sin( t * 0.5 ) + p.y * cos( t * 0.3 ) + t ) );
   field += 2.0 * sin( 3.0 * length( p + vec2( sin( t * 0.2 ), cos( t * 0.4 ) ) ) + t );
   return field;

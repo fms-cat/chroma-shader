@@ -48,7 +48,7 @@ export class ChromaShader {
         this.__program = newProgram;
 
         if ( prevProgram ) {
-          prevProgram.getShaders()!.forEach( ( shader ) => shader.dispose() );
+          prevProgram.shaders!.forEach( ( shader ) => shader.dispose() );
           prevProgram.dispose();
         }
 

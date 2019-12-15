@@ -32,18 +32,18 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@fms-cat/glcat-ts": "^0.2.1",
+    "@fms-cat/glcat-ts": "^0.7.1",
     "@types/gl": "^4.1.0",
-    "@types/request": "^2.48.1",
-    "@types/webpack": "^4.4.27",
-    "gl": "^4.2.2",
-    "raw-loader": "^2.0.0",
+    "@types/request": "^2.48.3",
+    "@types/webpack": "^4.41.0",
+    "gl": "^4.4.0",
+    "raw-loader": "^4.0.0",
     "request": "^2.88.0",
-    "rimraf": "^2.6.3",
-    "ts-loader": "^5.4.4",
-    "ts-node": "^8.1.0",
-    "typescript": "^3.4.5",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1"
+    "rimraf": "^3.0.0",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
