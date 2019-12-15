@@ -1,7 +1,7 @@
 {
   "name": "@fms-cat/chroma-shader",
   "description": "yes chroma is my most favorite sound voltex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.min.js",
   "author": {
     "name": "FMS-Cat",
