@@ -2,10 +2,12 @@
 # yarn lockfile v1
 
 
-"@fms-cat/glcat-ts@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@fms-cat/glcat-ts/-/glcat-ts-0.7.1.tgz#279b163105e21c157cdcb7cc6abcd13225fbaf2e"
-  integrity sha512-roOEqMhCVL3ST+Tql4E2jO7BBNIVZhRUoxKgAlB297IQWbgtuR7aNIRf34Li6/gLne0/hJxYreLACHuZWb3bOw==
+"@fms-cat/glcat-ts@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@fms-cat/glcat-ts/-/glcat-ts-0.7.2.tgz#7b518d7c3635d4efa58893a0fb7892b4f73658c9"
+  integrity sha512-UyurARY9s9E4r4zur1H3cYtOM1k9l8quFWYjggqYbrFn2eLf8NXRSceAC3TJ7EEEc3OAwkfM0nbhUj85tyasmA==
+  dependencies:
+    eventemitter3 "^4.0.0"
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -1059,6 +1061,11 @@ estraverse@^4.1.0, estraverse@^4.1.1:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
   integrity sha512-39nnKffWz8xN1BU/2c79n9nB9HDzo0niYUqx6xyqUnyoAnQyyWpOTdZEeiCch8BBu515t4wp9ZmgVfVhn9EBpw==
+
+eventemitter3@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.0.tgz#d65176163887ee59f386d64c82610b696a4a74eb"
+  integrity sha512-qerSRB0p+UDEssxTtm6EDKcE7W4OaoisfIMl4CngyEhjpYglocpNg6UEqCvemdGhosAsg4sO2dXJOdyBifPGCg==
 
 events@^3.0.0:
   version "3.0.0"

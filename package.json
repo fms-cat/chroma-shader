@@ -32,7 +32,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@fms-cat/glcat-ts": "^0.7.1",
+    "@fms-cat/glcat-ts": "^0.7.2",
     "@types/gl": "^4.1.0",
     "@types/request": "^2.48.3",
     "@types/webpack": "^4.41.0",
